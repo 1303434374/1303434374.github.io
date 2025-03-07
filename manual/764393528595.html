@@ -1,1 +1,140 @@
-764393528595
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Tabs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+        .tabs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            z-index: 10;
+            border-bottom: 2px solid #ddd;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .tab:hover {
+            background-color: #f0f0f0;
+        }
+        .tab.active {
+            background-color: #007bff;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            height: calc(100vh - 50px); /* Full height minus the tab bar */
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-top: 60px; /* Space for the fixed tab bar */
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: none;
+            overflow-y: auto;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .content.active {
+            display: block;
+        }
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .content p {
+            margin-bottom: 15px;
+        }
+        .content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab active" onclick="showTab(0)">User Manual</div>
+        <div class="tab" onclick="showTab(1)">EU Declaration of Conformity</div>
+    </div>
+    <div class="container">
+        <div class="content active">
+            <h2>User Manual</h2>
+            <p>Welcome to the User Manual! Here you can find detailed instructions on how to use our product effectively and safely.</p>
+            <p>The manual covers various sections, including setup, features, and troubleshooting. If you have any questions, please refer to the following sections for assistance:</p>
+            <ul>
+                <li><strong>Getting Started:</strong> Learn how to set up and use the product.</li>
+                <li><strong>Features:</strong> Discover the key features of the product.</li>
+                <li><strong>Troubleshooting:</strong> Find solutions to common issues.</li>
+            </ul>
+            <p>If you need further assistance, feel free to <a href="#">contact our support team</a>.</p>
+        </div>
+        <div class="content">
+            <h2>EU Declaration of Conformity</h2>
+            <p>This is the EU Declaration of Conformity, confirming that our product complies with the European Union's safety, health, and environmental protection standards.</p>
+            <p>Our product is tested and verified in accordance with the following EU regulations:</p>
+            <ul>
+                <li><strong>Directive 2014/53/EU:</strong> Radio Equipment Directive</li>
+                <li><strong>Directive 2011/65/EU:</strong> RoHS Directive</li>
+                <li><strong>Directive 2014/30/EU:</strong> EMC Directive</li>
+            </ul>
+            <p>For more details, please refer to the official document or <a href="#">contact us</a> for additional information.</p>
+        </div>
+    </div>
+
+    <script>
+        function showTab(index) {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.content');
+            
+            tabs.forEach((tab, i) => {
+                if (i === index) {
+                    tab.classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                }
+            });
+            
+            contents.forEach((content, i) => {
+                if (i === index) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
