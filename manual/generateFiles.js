@@ -54,7 +54,7 @@ const htmlTemplate = (name) => `
 
         /* Content container styling */
         .content-container {
-            padding-bottom: 20px;
+            padding: 0 20px 20px;
             background-color: #fff;
             margin-top: 10px;
             min-height: calc(100vh - 60px); /* Adjusts based on tab height */
