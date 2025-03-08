@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>764393529073</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding-bottom: 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px);
+            /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <!-- 罗马尼亚语 -->
+            <h2>Instrucțiuni de Utilizare</h2>
+            <p><strong>Atenție:</strong> Achiziționați acest produs doar din magazinul oficial Pengda pentru a garanta
+                autenticitatea produsului. Alte magazine nu pot asigura calitatea și autenticitatea acestuia!</p>
+
+            <h3>Pași pentru Aplicarea Genelor</h3>
+            <ol>
+                <li><strong>Pasul 1:</strong> Rulați ușor banda genelor cu ajutorul unei pensete.</li>
+                <li><strong>Pasul 2:</strong> Aplicați adezivul pentru gene pe genele naturale.</li>
+                <li><strong>Pasul 3:</strong> Plasați buchețelele de gene în poziția dorită.</li>
+                <li><strong>Pasul 4:</strong> Folosiți un sigilant pentru gene pentru a fixa aplicarea.</li>
+            </ol>
+
+            <h3>Atenționări</h3>
+            <ul>
+                <li>Evitați contactul produsului cu ochii. Dacă apare iritație, întrerupeți utilizarea imediat.</li>
+                <li>Nu lăsați produsul la îndemâna copiilor.</li>
+                <li>Păstrați într-un loc răcoros și uscat, departe de lumina directă a soarelui.</li>
+            </ul>
+
+            <!-- 保加利亚语 -->
+            <hr>
+            <h2>Инструкции за употреба</h2>
+            <p><strong>Внимание:</strong> Купувайте този продукт само от официалния магазин на Pengda, за да осигурите
+                автентичността и качеството му. Други магазини не могат да гарантират истинността на продукта!</p>
+
+            <h3>Стъпки за поставяне на мигли</h3>
+            <ol>
+                <li><strong>Стъпка 1:</strong> Внимателно навийте лентата на миглите с помощта на пинсета.</li>
+                <li><strong>Стъпка 2:</strong> Нанесете лепило за мигли върху естествените си мигли.</li>
+                <li><strong>Стъпка 3:</strong> Поставете снопчетата мигли на желаното място.</li>
+                <li><strong>Стъпка 4:</strong> Използвайте уплътнител за мигли, за да фиксирате нанасянето.</li>
+            </ol>
+
+            <h3>Предупреждения</h3>
+            <ul>
+                <li>Избягвайте контакт на продукта с очите. Ако се появи раздразнение, спрете употребата веднага.</li>
+                <li>Пазете продукта далеч от деца.</li>
+                <li>Съхранявайте на хладно и сухо място, далеч от пряка слънчева светлина.</li>
+            </ul>
+
+            <!-- 匈牙利语 -->
+            <hr>
+            <h2>Használati útmutató</h2>
+            <p><strong>Figyelem:</strong> A terméket kizárólag a Pengda hivatalos üzletéből vásárolja meg, hogy
+                biztosított legyen az eredetiség és a minőség. Más boltok nem garantálják a termék valódiságát!</p>
+
+            <h3>Műszempilla Felhelyezési Lépései</h3>
+            <ol>
+                <li><strong>1. lépés:</strong> Finoman görgesse le a szempillacsíkot csipesszel.</li>
+                <li><strong>2. lépés:</strong> Vigyen fel szempillaragasztót a természetes szempillákra.</li>
+                <li><strong>3. lépés:</strong> Helyezze fel a szempillacsomókat a kívánt pozícióba.</li>
+                <li><strong>4. lépés:</strong> Használjon szempillatömítőt a rögzítéshez.</li>
+            </ol>
+
+            <h3>Figyelmeztetések</h3>
+            <ul>
+                <li>Kerülje a termék szembe jutását. Irritáció esetén azonnal hagyja abba a használatot.</li>
+                <li>A terméket tartsa gyermekektől elzárva.</li>
+                <li>Tárolja hűvös, száraz helyen, közvetlen napfénytől távol.</li>
+            </ul>
+
+            <!-- 英语 -->
+            <hr>
+            <h2>Instructions for Use</h2>
+            <p><strong>Attention:</strong> Purchase this product only from the official Pengda store to ensure
+                authenticity. Other stores cannot guarantee product quality and authenticity!</p>
+
+            <h3>Steps to Apply the Lashes</h3>
+            <ol>
+                <li><strong>Step 1:</strong> Gently roll the lash band down using tweezers.</li>
+                <li><strong>Step 2:</strong> Apply lash bond to your natural eyelashes.</li>
+                <li><strong>Step 3:</strong> Place the lash clusters in the desired position.</li>
+                <li><strong>Step 4:</strong> Use lash seal to lock the application in place.</li>
+            </ol>
+
+            <h3>Warnings</h3>
+            <ul>
+                <li>Avoid contact with eyes. Discontinue use immediately if irritation occurs.</li>
+                <li>Keep the product out of reach of children.</li>
+                <li>Store in a cool, dry place away from direct sunlight.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">764393529073</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the
+                manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">
+                Product Name: Sofa sticker<br>
+                Product Description: A film for preventing scratches from cats and dogs, made of healthy and
+                environmentally friendly PVC material.
+            </p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the
+                relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

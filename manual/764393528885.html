@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>764393528885</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding-bottom: 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px);
+            /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <!-- 罗马尼亚语版本 -->
+            <h1>Instrucțiuni de utilizare</h1>
+            <p><strong>Achiziționați acest produs numai din magazinul oficial Pengda pentru a vă asigura autenticitatea
+                    și calitatea! Alte magazine nu pot garanta autenticitatea și calitatea produsului.</strong></p>
+            <h2>Cum să utilizați produsul</h2>
+            <ol>
+                <li>Deschideți cutia și scoateți toate piesele, inclusiv blocurile de cuburi, cărțile de model și
+                    clopoțelul.</li>
+                <li>Așezați blocurile pe o suprafață plană și bine iluminată.</li>
+                <li>Un jucător extrage o carte de model și arată imaginea tuturor participanților.</li>
+                <li>Toți jucătorii încearcă să aranjeze rapid cuburile astfel încât să se potrivească cu modelul de pe
+                    carte.</li>
+                <li>Primul jucător care finalizează modelul trebuie să lovească clopoțelul pentru a anunța finalizarea.
+                </li>
+                <li>Verificați rezultatul pentru a vedea dacă se potrivește modelului. Dacă este corect, jucătorul
+                    câștigă runda.</li>
+            </ol>
+            <h2>Precauții</h2>
+            <ul>
+                <li>Produsul nu este potrivit pentru copiii sub 3 ani din cauza pieselor mici care pot fi înghițite.
+                </li>
+                <li>Utilizați sub supravegherea unui adult pentru copiii mici.</li>
+                <li>Păstrați produsul într-un loc uscat și evitați contactul cu apa.</li>
+                <li>Asigurați-vă că toți jucătorii înțeleg regulile înainte de a începe jocul.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 保加利亚语版本 -->
+            <h1>Инструкции за употреба</h1>
+            <p><strong>Закупете този продукт само от официалния магазин на Pengda, за да гарантирате автентичност и
+                    качество! Други магазини не могат да гарантират автентичността и качеството на продукта.</strong>
+            </p>
+            <h2>Как да използвате продукта</h2>
+            <ol>
+                <li>Отворете кутията и извадете всички части, включително кубчетата, картите с модели и звънеца.</li>
+                <li>Поставете кубчетата върху равна и добре осветена повърхност.</li>
+                <li>Един играч изтегля карта с модел и показва изображението на всички участници.</li>
+                <li>Всички играчи се опитват бързо да подредят кубчетата, за да съвпаднат с модела на картата.</li>
+                <li>Първият играч, който завърши модела, трябва да удари звънеца, за да обяви завършването.</li>
+                <li>Проверете резултата, за да видите дали съвпада с модела. Ако е правилно, играчът печели рунда.</li>
+            </ol>
+            <h2>Предпазни мерки</h2>
+            <ul>
+                <li>Продуктът не е подходящ за деца под 3 години поради малки части, които могат да бъдат погълнати.
+                </li>
+                <li>Използвайте под надзора на възрастен за малки деца.</li>
+                <li>Съхранявайте продукта на сухо място и избягвайте контакт с вода.</li>
+                <li>Уверете се, че всички играчи разбират правилата, преди да започнете играта.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 匈牙利语版本 -->
+            <h1>Használati utasítások</h1>
+            <p><strong>Csak a Pengda hivatalos boltjából vásárolja meg ezt a terméket, hogy biztosítsa a hitelességet és
+                    a minőséget! Más boltok nem garantálják a termék hitelességét és minőségét.</strong></p>
+            <h2>Hogyan használjuk a terméket</h2>
+            <ol>
+                <li>Nyissa ki a dobozt, és vegye ki az összes darabot, beleértve a kockákat, a mintakártyákat és a
+                    csengőt.</li>
+                <li>Helyezze a kockákat egy sík és jól megvilágított felületre.</li>
+                <li>Egy játékos húz egy mintakártyát, és megmutatja a képet az összes résztvevőnek.</li>
+                <li>Minden játékos gyorsan megpróbálja a kockákat úgy rendezni, hogy azok megfeleljenek a kártya
+                    mintájának.</li>
+                <li>Az első játékos, aki elkészül a mintával, meg kell nyomnia a csengőt, hogy jelezze a befejezést.
+                </li>
+                <li>Ellenőrizze az eredményt, hogy megegyezik-e a mintával. Ha helyes, a játékos megnyeri a kört.</li>
+            </ol>
+            <h2>Óvintézkedések</h2>
+            <ul>
+                <li>A termék nem alkalmas 3 év alatti gyermekek számára, mert apró alkatrészeket tartalmazhat, amelyek
+                    lenyelhetők.</li>
+                <li>Kisgyermekek esetén használja felnőtt felügyelete mellett.</li>
+                <li>Tartsa száraz helyen, és kerülje a vízzel való érintkezést.</li>
+                <li>Győződjön meg róla, hogy minden játékos megérti a szabályokat, mielőtt elkezdi a játékot.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 英语版本 -->
+            <h1>Instructions for Use</h1>
+            <p><strong>Purchase this product only from the official Pengda store to ensure authenticity and quality!
+                    Other stores cannot guarantee the product's authenticity and quality.</strong></p>
+            <h2>How to Use the Product</h2>
+            <ol>
+                <li>Open the box and remove all the pieces, including the cube blocks, model cards, and the bell.</li>
+                <li>Place the blocks on a flat and well-lit surface.</li>
+                <li>One player draws a model card and shows the image to all participants.</li>
+                <li>All players quickly attempt to arrange the cubes to match the pattern on the card.</li>
+                <li>The first player to complete the pattern must hit the bell to announce completion.</li>
+                <li>Check the result to see if it matches the pattern. If correct, the player wins the round.</li>
+            </ol>
+            <h2>Precautions</h2>
+            <ul>
+                <li>This product is not suitable for children under 3 years old due to small parts that may be
+                    swallowed.</li>
+                <li>Use under adult supervision for young children.</li>
+                <li>Store the product in a dry place and avoid contact with water.</li>
+                <li>Ensure all players understand the rules before starting the game.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">764393528885</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the
+                manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">
+                Product Name: Sofa sticker<br>
+                Product Description: A film for preventing scratches from cats and dogs, made of healthy and
+                environmentally friendly PVC material.
+            </p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the
+                relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

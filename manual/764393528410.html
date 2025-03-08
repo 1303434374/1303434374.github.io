@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>764393528410</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding-bottom: 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px); /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <h2>Instrucțiuni de Utilizare</h2>
+            <h3 style="text-align: center;"> Achiziționați acest produs doar din magazinul oficial Pengda pentru a vă asigura autenticitatea și calitatea produsului. Alte magazine nu pot garanta autenticitatea și calitatea produsului!</h3>
+            
+            <hr>
+            
+            <h2>RO: Instrucțiuni de Utilizare</h2>
+            <p><strong>1. Montarea Difuzorului:</strong></p>
+            <ul>
+              <li>Asigurați-vă că uscătorul de păr este oprit și rece înainte de a monta difuzorul.</li>
+              <li>Conectați ferm difuzorul din silicon la duza uscătorului de păr.</li>
+            </ul>
+            
+            <p><strong>2. Utilizare Corectă:</strong></p>
+            <ul>
+              <li>Porniți uscătorul la o temperatură medie spre scăzută pentru a evita supraîncălzirea.</li>
+              <li>Secționați părul și poziționați difuzorul aproape de rădăcini pentru a crea volum.</li>
+              <li>Mișcați difuzorul în cercuri mici pentru a distribui uniform căldura și a defini buclele.</li>
+            </ul>
+            
+            <p><strong>3. Curățare și Întreținere:</strong></p>
+            <ul>
+              <li>Opriți și deconectați uscătorul înainte de a scoate difuzorul.</li>
+              <li>Clătiți difuzorul cu apă caldă și lăsați-l să se usuce complet înainte de reutilizare.</li>
+            </ul>
+            
+            <p><strong>Atenționări:</strong></p>
+            <ul>
+              <li>Nu folosiți difuzorul la temperaturi extrem de ridicate pentru a evita deteriorarea.</li>
+              <li>Nu lăsați produsul nesupravegheat în timpul utilizării.</li>
+            </ul>
+            
+            <hr>
+            
+            <h2>BG: Инструкции за употреба</h2>
+            <h3 style="text-align: center;"> Закупете този продукт само от официалния магазин Pengda, за да гарантирате неговата автентичност и качество. Други магазини не могат да гарантират качеството и истинността на продукта!</h3>
+            
+            <p><strong>1. Монтиране на дифузера:</strong></p>
+            <ul>
+              <li>Уверете се, че сешоарът е изключен и охладен преди монтаж.</li>
+              <li>Закрепете здраво силиконовия дифузер към накрайника на сешоара.</li>
+            </ul>
+            
+            <p><strong>2. Правилна употреба:</strong></p>
+            <ul>
+              <li>Включете сешоара на средна или ниска температура, за да избегнете прегряване.</li>
+              <li>Разделете косата и поставете дифузера близо до корените за обем.</li>
+              <li>Движете дифузера с малки кръгови движения за равномерно разпределение на топлината.</li>
+            </ul>
+            
+            <p><strong>3. Почистване и поддръжка:</strong></p>
+            <ul>
+              <li>Изключете сешоара преди да премахнете дифузера.</li>
+              <li>Измийте дифузера с топла вода и го оставете да изсъхне напълно.</li>
+            </ul>
+            
+            <p><strong>Внимание:</strong></p>
+            <ul>
+              <li>Не използвайте дифузера при много високи температури, за да предотвратите повреди.</li>
+              <li>Не оставяйте уреда без надзор по време на употреба.</li>
+            </ul>
+            
+            <hr>
+            
+            <h2>HU: Használati Utasítás</h2>
+            <h3 style="text-align: center;"> Ezt a terméket kizárólag a hivatalos Pengda áruházból vásárolja meg, hogy biztosítsa a hitelességet és a minőséget. Más boltok nem garantálják a termék eredetiségét és minőségét!</h3>
+            
+            <p><strong>1. A diffúzor felszerelése:</strong></p>
+            <ul>
+              <li>Győződjön meg arról, hogy a hajszárító ki van kapcsolva és kihűlt.</li>
+              <li>Erősen csatlakoztassa a szilikon diffúzort a hajszárító fúvókájára.</li>
+            </ul>
+            
+            <p><strong>2. Helyes használat:</strong></p>
+            <ul>
+              <li>Kapcsolja be a hajszárítót közepes vagy alacsony hőfokon a túlmelegedés elkerülése érdekében.</li>
+              <li>Ossza részekre a haját, és helyezze a diffúzort a hajtövekhez a dús hatás érdekében.</li>
+              <li>Kis körkörös mozdulatokkal mozgassa a diffúzort a hő egyenletes elosztásához.</li>
+            </ul>
+            
+            <p><strong>3. Tisztítás és karbantartás:</strong></p>
+            <ul>
+              <li>Kikapcsolás után távolítsa el a diffúzort.</li>
+              <li>Meleg vízzel mossa át, majd hagyja teljesen megszáradni.</li>
+            </ul>
+            
+            <p><strong>Figyelmeztetés:</strong></p>
+            <ul>
+              <li>Ne használja a diffúzort rendkívül magas hőfokon, hogy elkerülje a károsodást.</li>
+              <li>Soha ne hagyja a terméket felügyelet nélkül használat közben.</li>
+            </ul>
+            
+            <hr>
+            
+            <h2>EN: User Manual</h2>
+            <h3 style="text-align: center;"> Purchase this product only from the official Pengda store to ensure authenticity and quality. Other stores cannot guarantee the product's authenticity and quality!</h3>
+            
+            <p><strong>1. Attaching the Diffuser:</strong></p>
+            <ul>
+              <li>Ensure the hair dryer is turned off and cool before attaching the diffuser.</li>
+              <li>Securely attach the silicone diffuser to the hair dryer's nozzle.</li>
+            </ul>
+            
+            <p><strong>2. Proper Use:</strong></p>
+            <ul>
+              <li>Turn on the dryer to a medium or low heat setting to avoid overheating.</li>
+              <li>Section your hair and place the diffuser close to the roots for added volume.</li>
+              <li>Move the diffuser in small circular motions to evenly distribute heat and define curls.</li>
+            </ul>
+            
+            <p><strong>3. Cleaning and Maintenance:</strong></p>
+            <ul>
+              <li>Turn off and unplug the dryer before removing the diffuser.</li>
+              <li>Rinse the diffuser with warm water and let it dry completely before reuse.</li>
+            </ul>
+            
+            <p><strong>Warnings:</strong></p>
+            <ul>
+              <li>Do not use the diffuser on extremely high heat settings to prevent damage.</li>
+              <li>Do not leave the product unattended during use.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+            
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">764393528410</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">
+                Product Name: Sofa sticker<br>
+                Product Description: A film for preventing scratches from cats and dogs, made of healthy and environmentally friendly PVC material.
+            </p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>764393528939</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding-bottom: 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px);
+            /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <!-- 罗马尼亚语版本 -->
+            <h1>Instrucțiuni de utilizare</h1>
+            <p><strong>Achiziționați acest produs numai din magazinul oficial Pengda pentru a vă asigura autenticitatea
+                    și calitatea! Alte magazine nu pot garanta autenticitatea și calitatea produsului.</strong></p>
+            <h2>Cum să utilizați produsul</h2>
+            <ol>
+                <li>Despachetați figurina dragonului cu grijă pentru a evita deteriorarea detaliilor delicate.</li>
+                <li>Pozitionați dragonul pe o suprafață plană și stabilă pentru afișare.</li>
+                <li>Manipulați articulatiile dragonului cu atenție pentru a ajusta poziția dorită. Evitați aplicarea
+                    unei forțe excesive pentru a preveni ruperea.</li>
+                <li>Dragonul poate fi folosit ca piesă decorativă sau ca jucărie interactivă. Explorați diferite poziții
+                    pentru a evidenția detaliile complexe.</li>
+            </ol>
+            <h2>Precauții</h2>
+            <ul>
+                <li>Produsul nu este potrivit pentru copii sub 3 ani din cauza pieselor mici care pot fi înghițite.</li>
+                <li>Păstrați produsul departe de sursele de căldură și umiditate pentru a preveni deformarea.</li>
+                <li>Curățați cu o cârpă moale și uscată. Nu folosiți produse chimice sau apă.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 保加利亚语版本 -->
+            <h1>Инструкции за употреба</h1>
+            <p><strong>Закупете този продукт само от официалния магазин на Pengda, за да гарантирате автентичност и
+                    качество! Други магазини не могат да гарантират автентичността и качеството на продукта.</strong>
+            </p>
+            <h2>Как да използвате продукта</h2>
+            <ol>
+                <li>Внимателно разопаковайте фигурата на дракона, за да избегнете повреда на деликатните детайли.</li>
+                <li>Поставете дракона върху равна и стабилна повърхност за показване.</li>
+                <li>Внимателно регулирайте ставите на дракона, за да постигнете желаната поза. Избягвайте прилагането на
+                    прекалена сила, за да предотвратите счупване.</li>
+                <li>Драконът може да се използва като декоративна част или като интерактивна играчка. Изследвайте
+                    различни пози, за да подчертаете сложните детайли.</li>
+            </ol>
+            <h2>Предпазни мерки</h2>
+            <ul>
+                <li>Продуктът не е подходящ за деца под 3 години поради малки части, които могат да бъдат погълнати.
+                </li>
+                <li>Пазете продукта далеч от източници на топлина и влага, за да предотвратите деформация.</li>
+                <li>Почиствайте с мека и суха кърпа. Не използвайте химически продукти или вода.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 匈牙利语版本 -->
+            <h1>Használati utasítások</h1>
+            <p><strong>Csak a Pengda hivatalos boltjából vásárolja meg ezt a terméket, hogy biztosítsa a hitelességet és
+                    a minőséget! Más boltok nem garantálják a termék hitelességét és minőségét.</strong></p>
+            <h2>Hogyan használjuk a terméket</h2>
+            <ol>
+                <li>Óvatosan csomagolja ki a sárkányfigurát, hogy elkerülje a finom részletek sérülését.</li>
+                <li>Helyezze a sárkányt egy sík és stabil felületre a kiállításhoz.</li>
+                <li>Óvatosan állítsa be a sárkány ízületeit a kívánt póz eléréséhez. Kerülje a túlzott erő alkalmazását,
+                    hogy megelőzze a törést.</li>
+                <li>A sárkány használható dekorációként vagy interaktív játékként. Fedezze fel a különböző pózokat, hogy
+                    kiemelje az összetett részleteket.</li>
+            </ol>
+            <h2>Óvintézkedések</h2>
+            <ul>
+                <li>A termék nem alkalmas 3 év alatti gyermekek számára, mert apró alkatrészeket tartalmazhat, amelyek
+                    lenyelhetők.</li>
+                <li>Tartsa a terméket távol hőforrásoktól és nedvességtől a deformáció elkerülése érdekében.</li>
+                <li>Puhával és száraz ronggyal tisztítsa. Ne használjon vegyszereket vagy vizet.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 英语版本 -->
+            <h1>Instructions for Use</h1>
+            <p><strong>Purchase this product only from the official Pengda store to ensure authenticity and quality!
+                    Other stores cannot guarantee the product's authenticity and quality.</strong></p>
+            <h2>How to Use the Product</h2>
+            <ol>
+                <li>Carefully unpack the dragon figure to avoid damaging its delicate details.</li>
+                <li>Place the dragon on a flat and stable surface for display.</li>
+                <li>Gently adjust the dragon's joints to achieve the desired pose. Avoid applying excessive force to
+                    prevent breakage.</li>
+                <li>The dragon can be used as a decorative piece or an interactive toy. Explore different poses to
+                    highlight its intricate details.</li>
+            </ol>
+            <h2>Precautions</h2>
+            <ul>
+                <li>This product is not suitable for children under 3 years old due to small parts that may pose a
+                    choking hazard.</li>
+                <li>Keep the product away from heat sources and moisture to prevent deformation.</li>
+                <li>Clean with a soft, dry cloth. Do not use chemicals or water.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">764393528939</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the
+                manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">
+                Product Name: Sofa sticker<br>
+                Product Description: A film for preventing scratches from cats and dogs, made of healthy and
+                environmentally friendly PVC material.
+            </p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the
+                relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

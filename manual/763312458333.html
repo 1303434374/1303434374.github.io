@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>763312458333</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding-bottom: 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px);
+            /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <!-- 罗马尼亚语版本 -->
+            <h1>Instrucțiuni de utilizare</h1>
+            <p><strong>Achiziționați acest produs numai din magazinul oficial Pengda pentru a vă asigura autenticitatea
+                    și calitatea! Alte magazine nu pot garanta autenticitatea și calitatea produsului.</strong></p>
+            <h2>Cum să utilizați produsul</h2>
+            <ol>
+                <li>Curățați și uscați complet pielea înainte de aplicarea sutienului, evitând cremele, uleiurile sau
+                    loțiunile.</li>
+                <li>Dezlipiți folia de protecție de pe partea adezivă a sutienului.</li>
+                <li>Așezați cu grijă fiecare cupă pe piept, ajustând poziția pentru confort și susținere optimă.</li>
+                <li>Conectați clema din față pentru a crea un efect de lifting și un decolteu adânc.</li>
+                <li>După utilizare, spălați cu apă călduță și săpun delicat, apoi lăsați să se usuce la aer. Nu folosiți
+                    prosopul pentru a evita deteriorarea adezivului.</li>
+            </ol>
+            <h2>Precauții</h2>
+            <ul>
+                <li>Produsul nu este potrivit pentru pielea sensibilă sau rănită.</li>
+                <li>Evitați utilizarea produsului pentru perioade îndelungate pentru a preveni iritarea pielii.</li>
+                <li>Păstrați sutienul într-un loc uscat și ferit de praf pentru a menține proprietățile adezive.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 保加利亚语版本 -->
+            <h1>Инструкции за употреба</h1>
+            <p><strong>Закупете този продукт само от официалния магазин на Pengda, за да гарантирате автентичност и
+                    качество! Други магазини не могат да гарантират автентичността и качеството на продукта.</strong>
+            </p>
+            <h2>Как да използвате продукта</h2>
+            <ol>
+                <li>Почистете и изсушете напълно кожата преди нанасяне на сутиена, като избягвате кремове, масла или
+                    лосиони.</li>
+                <li>Отстранете защитното фолио от лепкавата страна на сутиена.</li>
+                <li>Внимателно поставете всяка чаша върху гърдите, като регулирате позицията за оптимален комфорт и
+                    поддръжка.</li>
+                <li>Свържете предната щипка, за да създадете лифтинг ефект и дълбоко деколте.</li>
+                <li>След употреба измийте с топла вода и мек сапун, след което оставете да изсъхне на въздух. Не
+                    използвайте кърпа, за да избегнете повреда на лепилото.</li>
+            </ol>
+            <h2>Предпазни мерки</h2>
+            <ul>
+                <li>Продуктът не е подходящ за чувствителна или наранена кожа.</li>
+                <li>Избягвайте използването на продукта за дълги периоди, за да предотвратите дразнене на кожата.</li>
+                <li>Съхранявайте сутиена на сухо място, далеч от прах, за да запазите адхезивните му свойства.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 匈牙利语版本 -->
+            <h1>Használati utasítások</h1>
+            <p><strong>Csak a Pengda hivatalos boltjából vásárolja meg ezt a terméket, hogy biztosítsa a hitelességet és
+                    a minőséget! Más boltok nem garantálják a termék hitelességét és minőségét.</strong></p>
+            <h2>Hogyan használjuk a terméket</h2>
+            <ol>
+                <li>Tisztítsa meg és szárítsa meg teljesen a bőrt a melltartó felhelyezése előtt, kerülje a krémek,
+                    olajok vagy testápolók használatát.</li>
+                <li>Távolítsa el a védőfóliát a ragadós oldalról.</li>
+                <li>Óvatosan helyezze fel a csészéket a mellre, és igazítsa a kényelmes és optimális tartás érdekében.
+                </li>
+                <li>Kapcsolja össze az elülső csatot a lifting hatás és a mély dekoltázs kialakításához.</li>
+                <li>Használat után mossa le langyos vízzel és enyhe szappannal, majd hagyja a levegőn megszáradni. Ne
+                    törölje le törölközővel, hogy elkerülje a ragasztó károsodását.</li>
+            </ol>
+            <h2>Óvintézkedések</h2>
+            <ul>
+                <li>A termék nem alkalmas érzékeny vagy sérült bőrre.</li>
+                <li>Kerülje a termék hosszú ideig történő viselését, hogy megelőzze a bőrirritációt.</li>
+                <li>Tartsa a melltartót száraz helyen, pormentesen, hogy megőrizze a tapadó tulajdonságait.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 英语版本 -->
+            <h1>Instructions for Use</h1>
+            <p><strong>Purchase this product only from the official Pengda store to ensure authenticity and quality!
+                    Other stores cannot guarantee the product's authenticity and quality.</strong></p>
+            <h2>How to Use the Product</h2>
+            <ol>
+                <li>Clean and dry your skin completely before applying the bra, avoiding creams, oils, or lotions.</li>
+                <li>Peel off the protective film from the adhesive side of the bra.</li>
+                <li>Carefully position each cup on your chest, adjusting for optimal comfort and support.</li>
+                <li>Connect the front clip to create a lifting effect and a deep cleavage.</li>
+                <li>After use, wash with warm water and mild soap, then air dry. Do not towel dry to avoid damaging the
+                    adhesive.</li>
+            </ol>
+            <h2>Precautions</h2>
+            <ul>
+                <li>This product is not suitable for sensitive or broken skin.</li>
+                <li>Avoid wearing the product for extended periods to prevent skin irritation.</li>
+                <li>Store the bra in a dry place and away from dust to maintain its adhesive properties.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">763312458333</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the
+                manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">
+                Product Name: Sofa sticker<br>
+                Product Description: A film for preventing scratches from cats and dogs, made of healthy and
+                environmentally friendly PVC material.
+            </p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the
+                relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>763312458838</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding-bottom: 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px);
+            /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <!-- 罗马尼亚语版本 -->
+            <h1>Instrucțiuni de utilizare</h1>
+            <p><strong>Achiziționați acest produs numai din magazinul oficial Pengda pentru a vă asigura autenticitatea
+                    și calitatea! Alte magazine nu pot garanta autenticitatea și calitatea produsului.</strong></p>
+            <h2>Cum să utilizați produsul</h2>
+            <ol>
+                <li>Scoateți ambalajul de plastic al unei tablete de duș cu abur.</li>
+                <li>Așezați tableta pe podeaua dușului, la o distanță sigură de jetul direct al apei, dar suficient de
+                    aproape pentru a intra în contact cu apa.</li>
+                <li>Bucurați-vă de aromele eliberate în timp ce tableta se dizolvă, oferindu-vă o experiență relaxantă
+                    de aromaterapie.</li>
+                <li>După utilizare, clătiți orice reziduu și asigurați-vă că podeaua dușului este curată.</li>
+            </ol>
+            <h2>Precauții</h2>
+            <ul>
+                <li>Nu aplicați tableta direct pe piele sau corp, este destinată doar utilizării externe pentru
+                    aromaterapie.</li>
+                <li>A nu se lăsa la îndemâna copiilor și animalelor de companie.</li>
+                <li>Evitați contactul cu ochii. În caz de contact, clătiți imediat cu apă curată.</li>
+                <li>Păstrați produsul într-un loc uscat și răcoros pentru a preveni degradarea.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 保加利亚语版本 -->
+            <h1>Инструкции за употреба</h1>
+            <p><strong>Закупете този продукт само от официалния магазин на Pengda, за да гарантирате автентичност и
+                    качество! Други магазини не могат да гарантират автентичността и качеството на продукта.</strong>
+            </p>
+            <h2>Как да използвате продукта</h2>
+            <ol>
+                <li>Отстранете пластмасовата опаковка на една таблетка за душ с пара.</li>
+                <li>Поставете таблетката на пода на душа, на безопасно разстояние от директната струя вода, но
+                    достатъчно близо, за да се намокри.</li>
+                <li>Насладете се на освобождаването на аромати, докато таблетката се разтваря, предоставяйки релаксиращо
+                    изживяване с ароматерапия.</li>
+                <li>След употреба изплакнете остатъците и се уверете, че подът на душа е чист.</li>
+            </ol>
+            <h2>Предпазни мерки</h2>
+            <ul>
+                <li>Не прилагайте таблетката директно върху кожата или тялото, предназначена е само за външна употреба
+                    за ароматерапия.</li>
+                <li>Пазете далеч от деца и домашни любимци.</li>
+                <li>Избягвайте контакт с очите. При контакт изплакнете веднага с чиста вода.</li>
+                <li>Съхранявайте продукта на сухо и хладно място, за да предотвратите разваляне.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 匈牙利语版本 -->
+            <h1>Használati utasítások</h1>
+            <p><strong>Csak a Pengda hivatalos boltjából vásárolja meg ezt a terméket, hogy biztosítsa a hitelességet és
+                    a minőséget! Más boltok nem garantálják a termék hitelességét és minőségét.</strong></p>
+            <h2>Hogyan használjuk a terméket</h2>
+            <ol>
+                <li>Távolítsa el az egyik zuhanygőz tabletta műanyag csomagolását.</li>
+                <li>Helyezze a tablettát a zuhany padlójára, biztonságos távolságra a közvetlen vízsugártól, de elég
+                    közel ahhoz, hogy vízzel érintkezzen.</li>
+                <li>Élvezze az illatok felszabadulását, miközben a tabletta feloldódik, nyugtató aromaterápiás élményt
+                    nyújtva.</li>
+                <li>Használat után öblítse le a maradványokat, és győződjön meg arról, hogy a zuhany padlója tiszta.
+                </li>
+            </ol>
+            <h2>Óvintézkedések</h2>
+            <ul>
+                <li>Ne helyezze a tablettát közvetlenül a bőrre vagy a testre, kizárólag külső használatra szolgál
+                    aromaterápiás célokra.</li>
+                <li>Tartsa távol gyermekektől és háziállatoktól.</li>
+                <li>Kerülje a szembe jutást. Szembe jutás esetén azonnal öblítse le tiszta vízzel.</li>
+                <li>Tárolja a terméket száraz és hűvös helyen, hogy elkerülje a romlást.</li>
+            </ul>
+
+            <hr>
+
+            <!-- 英语版本 -->
+            <h1>Instructions for Use</h1>
+            <p><strong>Purchase this product only from the official Pengda store to ensure authenticity and quality!
+                    Other stores cannot guarantee the product's authenticity and quality.</strong></p>
+            <h2>How to Use the Product</h2>
+            <ol>
+                <li>Remove the plastic packaging from one shower steamer tablet.</li>
+                <li>Place the tablet on the shower floor, at a safe distance from the direct water stream but close
+                    enough to get wet.</li>
+                <li>Enjoy the release of fragrances as the tablet dissolves, providing a soothing aromatherapy
+                    experience.</li>
+                <li>After use, rinse off any residue and ensure the shower floor is clean.</li>
+            </ol>
+            <h2>Precautions</h2>
+            <ul>
+                <li>Do not apply the tablet directly to skin or body; it is intended for external use only as an
+                    aromatherapy product.</li>
+                <li>Keep out of reach of children and pets.</li>
+                <li>Avoid contact with eyes. In case of contact, rinse immediately with clean water.</li>
+                <li>Store the product in a dry and cool place to prevent degradation.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">763312458838</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the
+                manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">
+                Product Name: Sofa sticker<br>
+                Product Description: A film for preventing scratches from cats and dogs, made of healthy and
+                environmentally friendly PVC material.
+            </p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the
+                relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
