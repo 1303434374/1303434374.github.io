@@ -150,7 +150,16 @@ const htmlTemplate = (name) => `
 
 // 批量生成 HTML 文件（直接生成在当前目录）
 names.forEach((name) => {
-    const filePath = path.join(__dirname, `${name}.html`);
-    fs.writeFileSync(filePath, htmlTemplate(name), 'utf-8');
+    // 删除文件名头尾的所有空格
+    const trimmedName = name.trim();
+    const filePath = path.join(__dirname, `${trimmedName}.html`);
+
+    // 如果文件已存在则跳过
+    if (fs.existsSync(filePath)) {
+        console.log(`Skipped: ${filePath} (File already exists)`);
+        return;
+    }
+
+    fs.writeFileSync(filePath, htmlTemplate(trimmedName), 'utf-8');
     console.log(`Created: ${filePath}`);
 });
