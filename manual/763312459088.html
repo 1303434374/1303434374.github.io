@@ -1,17 +1,10 @@
-const fs = require('fs');
-const path = require('path');
 
-// 读取名称列表
-const eans = fs.readFileSync('eans.txt', 'utf-8').split('\n').map(line => line.trim()).filter(Boolean);
-
-// HTML 模板
-const htmlTemplate = (ean) => `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${ean}</title>
+    <title>763312459088</title>
     <style>
         body, html {
             margin: 0;
@@ -78,14 +71,66 @@ const htmlTemplate = (ean) => `
 
     <div class="content-container" id="content-container">
         <div class="content" id="content1">
-
+            <h3>Instrucțiuni de utilizare</h3>
+            <p><strong>Pentru a achiziționa acest produs, vă rugăm să cumpărați doar din magazinul oficial Pengda, pentru a vă asigura de autenticitatea și calitatea produsului. Alte magazine nu pot garanta veridicitatea produsului!</strong></p>
+            <hr>
+            <p><strong>Instrucțiuni de utilizare:</strong></p>
+            <ul>
+              <li>Acest produs este destinat utilizării pentru ocazii speciale sau de zi cu zi.</li>
+              <li>Purtați-l pentru a adăuga un accent elegant ținutei dvs.</li>
+              <li>Este recomandat să nu expuneți produsul la apă, parfumuri sau produse chimice pentru a preveni deteriorarea materialului.</li>
+              <li>Curățați-l cu o cârpă moale pentru a îndepărta urmele de murdărie sau praf.</li>
+              <li>Depozitați-l într-un loc uscat, ferit de lumină directă și umiditate.</li>
+            </ul>
+            
+            <hr>
+            
+            <h3>Инструкции за употреба</h3>
+            <p><strong>Моля, закупете този продукт само от официалния магазин на Pengda, за да гарантирате автентичността и качеството. Други магазини не могат да осигурят достоверност на продукта!</strong></p>
+            <hr>
+            <p><strong>Инструкции за употреба:</strong></p>
+            <ul>
+              <li>Този продукт е предназначен за носене на специални поводи или всекидневни ситуации.</li>
+              <li>Носете го, за да добавите елегантен акцент към вашето облекло.</li>
+              <li>Препоръчва се да не излагате продукта на вода, парфюми или химикали, за да предотвратите повреда на материала.</li>
+              <li>Почистете го с мека кърпа, за да премахнете следи от замърсявания или прах.</li>
+              <li>Съхранявайте го на сухо място, далеч от пряка светлина и влага.</li>
+            </ul>
+            
+            <hr>
+            
+            <h3>Használati útmutató</h3>
+            <p><strong>Kérjük, csak a hivatalos Pengda boltban vásárolja meg ezt a terméket, hogy biztosítsa az eredetiséget és a minőséget. Más boltok nem garantálják a termék valódiságát!</strong></p>
+            <hr>
+            <p><strong>Használati utasítás:</strong></p>
+            <ul>
+              <li>Ez a termék alkalmas különleges eseményekre vagy mindennapi viseletre.</li>
+              <li>Viselje, hogy elegáns kiegészítőt adjon a ruhájához.</li>
+              <li>Ajánlott elkerülni a vízzel, parfümmel és vegyi anyagokkal való érintkezést, hogy elkerülje az anyag károsodását.</li>
+              <li>Az ékszert puha ruhával tisztítsa meg, hogy eltávolítsa a szennyeződéseket vagy port.</li>
+              <li>Tárolja száraz helyen, távol a közvetlen fénytől és nedvességtől.</li>
+            </ul>
+            
+            <hr>
+            
+            <h3>Instructions for Use</h3>
+            <p><strong>Please purchase this product only from the official Pengda store to ensure authenticity and quality. Other stores cannot guarantee the product's authenticity!</strong></p>
+            <hr>
+            <p><strong>Instructions for use:</strong></p>
+            <ul>
+              <li>This product is suitable for special occasions or everyday wear.</li>
+              <li>Wear it to add an elegant touch to your outfit.</li>
+              <li>It is recommended to avoid exposing the product to water, perfumes, or chemicals to prevent damage to the material.</li>
+              <li>Clean it with a soft cloth to remove any dirt or dust.</li>
+              <li>Store it in a dry place, away from direct light and moisture.</li>
+            </ul>
         </div>
 
         <div class="content" id="content2" style="display: none;">
             <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
             
             <p class="section-title">1. No … (unique identification of the product)</p>
-            <p class="section-content">${ean}</p>
+            <p class="section-content">763312459088</p>
 
             <p class="section-title">2. Name and Address of the Manufacturer:</p>
             <p class="section-content">
@@ -97,7 +142,7 @@ const htmlTemplate = (ean) => `
             <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
 
             <p class="section-title">4. Object of the Declaration:</p>
-            <p class="section-content">Product Name: </p>
+            <p class="section-content">Product Name: Necklace</p>
 
             <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the relevant Union harmonisation legislation:</p>
             <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
@@ -143,17 +188,3 @@ const htmlTemplate = (ean) => `
 
 </body>
 </html>
-`;
-
-// 批量生成 HTML 文件（直接生成在当前目录）
-eans.forEach((ean) => {
-    // 删除文件名头尾的所有空格
-    const trimmedName = ean.trim();
-    const filePath = path.join(__dirname, `${trimmedName}.html`);
-
-    // 如果文件已存在则跳过
-    if (fs.existsSync(filePath)) return;
-
-    fs.writeFileSync(filePath, htmlTemplate(trimmedName), 'utf-8');
-    console.log(ean);
-});
