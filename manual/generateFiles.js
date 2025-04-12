@@ -2,16 +2,16 @@ const fs = require('fs');
 const path = require('path');
 
 // 读取名称列表
-const names = fs.readFileSync('names.txt', 'utf-8').split('\n').map(line => line.trim()).filter(Boolean);
+const eans = fs.readFileSync('eans.txt', 'utf-8').split('\n').map(line => line.trim()).filter(Boolean);
 
 // HTML 模板
-const htmlTemplate = (name) => `
+const htmlTemplate = (ean) => `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${name}</title>
+    <title>${ean}</title>
     <style>
         body, html {
             margin: 0;
@@ -85,7 +85,7 @@ const htmlTemplate = (name) => `
             <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
             
             <p class="section-title">1. No … (unique identification of the product)</p>
-            <p class="section-content">${name}</p>
+            <p class="section-content">${ean}</p>
 
             <p class="section-title">2. Name and Address of the Manufacturer:</p>
             <p class="section-content">
@@ -97,10 +97,7 @@ const htmlTemplate = (name) => `
             <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
 
             <p class="section-title">4. Object of the Declaration:</p>
-            <p class="section-content">
-                Product Name: Sofa sticker<br>
-                Product Description: A film for preventing scratches from cats and dogs, made of healthy and environmentally friendly PVC material.
-            </p>
+            <p class="section-content">Product Name: </p>
 
             <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the relevant Union harmonisation legislation:</p>
             <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
@@ -149,9 +146,9 @@ const htmlTemplate = (name) => `
 `;
 
 // 批量生成 HTML 文件（直接生成在当前目录）
-names.forEach((name) => {
+eans.forEach((ean) => {
     // 删除文件名头尾的所有空格
-    const trimmedName = name.trim();
+    const trimmedName = ean.trim();
     const filePath = path.join(__dirname, `${trimmedName}.html`);
 
     // 如果文件已存在则跳过
