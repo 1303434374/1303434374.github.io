@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 读取名称列表
-const eans = fs.readFileSync('eans.txt', 'utf-8').split('\n').map(line => line.trim()).filter(Boolean);
+const eans = fs.readFileSync(path.join(__dirname, 'eans.txt'), 'utf-8').split('\n').map(line => line.trim()).filter(Boolean);
 
 // HTML 模板
 const htmlTemplate = (ean) => `

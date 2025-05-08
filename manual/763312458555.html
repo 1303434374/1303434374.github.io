@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>763312458555</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding: 0 20px 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px); /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <h2>Instrucțiuni de utilizare</h2>
+            <p><strong>Achiziționați acest produs numai din magazinul oficial Pengda pentru a vă asigura de autenticitatea și calitatea produsului. Alte magazine nu pot garanta originalitatea și calitatea!</strong></p>
+            <hr>
+            <h3>Instrucțiuni de utilizare:</h3>
+            <ul>
+              <li>Produsul se poartă peste haine, fiind prevăzut cu șireturi pentru a fi legat în spate.</li>
+              <li>Asigurați-vă că sortul este bine fixat pentru a evita alunecarea în timpul utilizării.</li>
+              <li>Poate fi utilizat în bucătărie, la grătar sau pentru ocazii speciale cu tematică amuzantă.</li>
+              <li>Curățați manual sau în mașina de spălat la temperaturi sub 30°C. Nu utilizați înălbitori.</li>
+            </ul>
+            <h3>Atenționări:</h3>
+            <ul>
+              <li>Evitați expunerea directă la surse de foc deschis.</li>
+              <li>Nu utilizați produsul ca echipament de protecție profesională.</li>
+              <li>Nu lăsați la îndemâna copiilor fără supraveghere.</li>
+            </ul>
+            
+            <hr>
+            
+            <h2>Инструкции за употреба</h2>
+            <p><strong>Моля, закупувайте този продукт само от официалния магазин на Pengda, за да гарантирате неговата автентичност и качество. Други магазини не могат да гарантират оригиналността и качеството на продукта!</strong></p>
+            <hr>
+            <h3>Инструкции за употреба:</h3>
+            <ul>
+              <li>Престилката се носи върху дрехите и се завързва на гърба с връзки.</li>
+              <li>Уверете се, че е добре закрепена, за да не се плъзга по време на употреба.</li>
+              <li>Подходяща е за кухнята, барбекю или забавни тематични събития.</li>
+              <li>Почиствайте ръчно или в пералня при температура под 30°C. Не използвайте белина.</li>
+            </ul>
+            <h3>Внимание:</h3>
+            <ul>
+              <li>Избягвайте директен контакт с открит огън.</li>
+              <li>Продуктът не е подходящ за професионална защитна екипировка.</li>
+              <li>Не оставяйте в близост до деца без надзор.</li>
+            </ul>
+            
+            <hr>
+            
+            <h2>Használati útmutató</h2>
+            <p><strong>Kérjük, ezt a terméket kizárólag a Pengda hivatalos boltjából vásárolja meg, hogy biztosítsa az eredetiséget és a minőséget. Más boltok nem garantálják a termék hitelességét és minőségét!</strong></p>
+            <hr>
+            <h3>Használati útmutató:</h3>
+            <ul>
+              <li>A kötényt ruházat fölé kell viselni, hátul kötős szalaggal rögzítve.</li>
+              <li>Győződjön meg róla, hogy a kötény biztonságosan rögzítve van, hogy ne csússzon el használat közben.</li>
+              <li>Használható a konyhában, grillezéshez vagy vicces tematikus eseményekhez.</li>
+              <li>Kézzel vagy mosógépben mossa, legfeljebb 30°C-on. Ne használjon fehérítőt.</li>
+            </ul>
+            <h3>Figyelmeztetés:</h3>
+            <ul>
+              <li>Kerülje a nyílt lánggal való érintkezést.</li>
+              <li>A termék nem minősül professzionális védőfelszerelésnek.</li>
+              <li>Ne hagyja gyermekek számára elérhető helyen felügyelet nélkül.</li>
+            </ul>
+            
+            <hr>
+            
+            <h2>Instructions for Use</h2>
+            <p><strong>Please purchase this product only from the official Pengda store to ensure authenticity and quality. Other stores cannot guarantee the product’s originality or quality!</strong></p>
+            <hr>
+            <h3>Instructions:</h3>
+            <ul>
+              <li>Wear the apron over your clothing and tie it securely at the back.</li>
+              <li>Ensure the apron is properly fastened to prevent slipping during use.</li>
+              <li>Suitable for kitchen use, barbecues, or humorous themed occasions.</li>
+              <li>Clean by hand or machine wash under 30°C. Do not use bleach.</li>
+            </ul>
+            <h3>Warnings:</h3>
+            <ul>
+              <li>Avoid direct contact with open flames.</li>
+              <li>This product is not intended as professional protective equipment.</li>
+              <li>Keep out of reach of children without supervision.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+            
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">763312458555</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">Product Name: Apron</p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>
