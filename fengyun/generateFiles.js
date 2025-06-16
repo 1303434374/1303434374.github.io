@@ -89,12 +89,12 @@ const htmlTemplate = (ean) => `
 
             <p class="section-title">2. Name and Address of the Manufacturer:</p>
             <p class="section-content">
-                Guangzhou Pengda Business Technology Co., Ltd.<br>
-                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+                Zhuhai Fengyun Technology Co., Ltd.<br>
+                Office 1#, 2nd Floor, Building 1-4, No. 128, Xiangzhou Renmin West Road, Xiangzhou District, Zhuhai City
             </p>
 
             <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the manufacturer:</p>
-            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+            <p class="section-content">Zhuhai Fengyun Technology Co., Ltd.</p>
 
             <p class="section-title">4. Object of the Declaration:</p>
             <p class="section-content">Product Name: </p>
