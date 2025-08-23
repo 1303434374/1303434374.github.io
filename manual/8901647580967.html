@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8901647580967</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding: 0 20px 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px);
+            /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <!-- Romanian -->
+            <h3>Instrucțiuni de utilizare</h3>
+            <p><strong>Notă importantă:</strong> Vă rugăm să cumpărați acest produs din magazinul oficial Pengda; alte
+                magazine nu pot garanta autenticitatea și calitatea!</p>
+
+            <h4>Înainte de utilizare</h4>
+            <ul>
+                <li>Părul trebuie să fie curat și uscat în proporție de aproximativ 70–90% (ușor umed este ideal).
+                    Descurcați-l complet.</li>
+                <li>Pregătiți banda din satin, clema de fixare și scrunchie-ul.</li>
+                <li>Evitați produse foarte uleioase înainte de înfășurare; pot reduce aderența și definiția buclelor.
+                </li>
+            </ul>
+
+            <h4>Pași de utilizare</h4>
+            <ol>
+                <li>Așezați banda pe creștet, aliniați mijlocul și fixați-l provizoriu cu clema.</li>
+                <li>Împărțiți părul în două secțiuni egale (stânga/dreapta).</li>
+                <li>Luați șuvițe de 1–2 cm și înfășurați-le pe rând în jurul benzii, menținând o tensiune ușoară și un
+                    sens constant.</li>
+                <li>La capete, fixați fiecare parte cu scrunchie. Scoateți clema de pe mijloc.</li>
+                <li>Lăsați 3–8 ore sau peste noapte. Pentru confort, ajustați poziția benzii astfel încât să nu apese pe
+                    scalp.</li>
+                <li>Dimineața, desfășurați de jos în sus, separați buclele cu degetele și, dacă doriți, fixați ușor cu
+                    spray.</li>
+            </ol>
+
+            <h4>Întreținere și curățare</h4>
+            <ul>
+                <li>Spălați banda și scrunchie-ul manual în apă călduță cu detergent delicat; stoarcere blândă, uscare
+                    la aer, la orizontală.</li>
+                <li>Curățați clema cu o cârpă ușor umedă; uscați complet înainte de depozitare.</li>
+            </ul>
+
+            <h4>Sfaturi de siguranță</h4>
+            <ul>
+                <li>Nu utilizați pe scalp iritat sau rănit. Opriți utilizarea la disconfort.</li>
+                <li>Nu dormiți cu părul ud care picură; riscă ruperea firului și disconfort.</li>
+                <li>Țineți departe de copii. Nu aproximați de flacără sau surse puternice de căldură.</li>
+                <li>Verificați periodic integritatea benzii și clemei; înlocuiți dacă apar fisuri sau deformări.</li>
+            </ul>
+
+            <hr />
+
+            <!-- Bulgarian -->
+            <h3>Инструкции за употреба</h3>
+            <p><strong>Важна бележка:</strong> Моля, купувайте този продукт от официалния магазин на Pengda; други
+                магазини не могат да гарантират автентичността и качеството!</p>
+
+            <h4>Преди употреба</h4>
+            <ul>
+                <li>Косата трябва да е чиста и подсушена ~70–90% (леко влажна е идеално). Разрешете добре.</li>
+                <li>Подгответе сатенената лента, щипката и ластика (scrunchie).</li>
+                <li>Избягвайте много мазни продукти преди навиване; намаляват задържането и оформянето.</li>
+            </ul>
+
+            <h4>Стъпки за употреба</h4>
+            <ol>
+                <li>Поставете лентата върху темето и фиксирайте временно средата със щипката.</li>
+                <li>Разделете косата на две равни секции (ляво/дясно).</li>
+                <li>Вземайте кичури по 1–2 см и ги увивайте последователно около лентата, с лека опън и в един и същ
+                    посока.</li>
+                <li>В краищата фиксирайте всяка страна с ластик. Свалете щипката от средата.</li>
+                <li>Оставете за 3–8 часа или през нощта. Настройте позицията за комфорт и да не притиска скалпа.</li>
+                <li>Сутрин развийте отдолу нагоре, разнесете къдриците с пръсти и по желание фиксирайте леко със спрей.
+                </li>
+            </ol>
+
+            <h4>Почистване и поддръжка</h4>
+            <ul>
+                <li>Перете лентата и ластика на ръка в хладка вода с нежен препарат; изтискайте внимателно и сушете на
+                    въздух.</li>
+                <li>Щипката почиствайте с леко влажна кърпа и подсушавайте добре преди съхранение.</li>
+            </ul>
+
+            <h4>Безопасност</h4>
+            <ul>
+                <li>Не използвайте върху раздразнен/наранен скалп. Преустановете при дискомфорт.</li>
+                <li>Не спете с много мокра коса; възможни са накъсване и дискомфорт.</li>
+                <li>Пазете от деца. Дръжте далеч от открит пламък и силни източници на топлина.</li>
+                <li>Редовно проверявайте лентата и щипката; подменете при пукнатини или деформации.</li>
+            </ul>
+
+            <hr />
+
+            <!-- Hungarian -->
+            <h3>Használati útmutató</h3>
+            <p><strong>Fontos megjegyzés:</strong> Kérjük, ezt a terméket a Pengda hivatalos áruházából vásárolja; más
+                boltok nem garantálják a hitelességet és a minőséget!</p>
+
+            <h4>Használat előtt</h4>
+            <ul>
+                <li>A haj legyen tiszta és kb. 70–90%-ban száraz (enyhén nedves az ideális). Fésülje ki a gubancokat.
+                </li>
+                <li>Készítse elő a szatén szalagot, a csipeszt és a scrunchie-t.</li>
+                <li>Kerülje az erősen olajos termékeket a feltekerés előtt; ronthatják a tartást.</li>
+            </ul>
+
+            <h4>Használati lépések</h4>
+            <ol>
+                <li>Helyezze a szalagot a fejtetőre, a közepét ideiglenesen rögzítse a csipesszel.</li>
+                <li>Ossza a hajat két egyenlő részre (bal/jobb).</li>
+                <li>1–2 cm-es tincseket tekerjen felváltva a szalag köré, enyhe húzással és azonos irányban.</li>
+                <li>A végeket mindkét oldalon rögzítse scrunchie-val. Vegye le a csipeszt a középről.</li>
+                <li>Hagyja 3–8 órán át vagy egész éjszakára. Kényelmi okból igazítsa úgy, hogy ne nyomja a fejbőrt.</li>
+                <li>Reggel alulról felfelé bontsa ki, az ujjakkal válassza szét a loknikat, majd igény szerint finoman
+                    fixálja.</li>
+            </ol>
+
+            <h4>Tisztítás és karbantartás</h4>
+            <ul>
+                <li>A szalagot és a scrunchie-t kézzel mossa langyos vízben, enyhe mosószerrel; kíméletes csavarás,
+                    fektetve szárítás.</li>
+                <li>A csipeszt nedves ruhával törölje át; tárolás előtt teljesen szárítsa meg.</li>
+            </ul>
+
+            <h4>Biztonság</h4>
+            <ul>
+                <li>Irritált vagy sérült fejbőrön ne használja. Kellemetlenség esetén hagyja abba.</li>
+                <li>Ne aludjon csöpögő vizes hajjal; törés és kellemetlenség léphet fel.</li>
+                <li>Gyermekektől tartsa távol. Nyílt lángtól és erős hőforrástól óvja.</li>
+                <li>Rendszeresen ellenőrizze a szalag és a csipesz állapotát; repedés vagy deformáció esetén cserélje.
+                </li>
+            </ul>
+
+            <hr />
+
+            <!-- English -->
+            <h3>User Manual</h3>
+            <p><strong>Important notice:</strong> Please purchase this product from the official Pengda store; other
+                stores cannot guarantee authenticity or quality!</p>
+
+            <h4>Before use</h4>
+            <ul>
+                <li>Hair should be clean and about 70–90% dry (slightly damp is ideal). Detangle thoroughly.</li>
+                <li>Prepare the satin ribbon, claw clip, and scrunchie.</li>
+                <li>Avoid heavy oils before wrapping; they may reduce hold and curl definition.</li>
+            </ul>
+
+            <h4>How to use</h4>
+            <ol>
+                <li>Place the ribbon over the crown and secure the center temporarily with the clip.</li>
+                <li>Divide hair into two equal sections (left/right).</li>
+                <li>Wrap 1–2 cm sections alternately around the ribbon, keeping gentle tension and a consistent
+                    direction.</li>
+                <li>Secure the ends on each side with the scrunchie. Remove the clip from the center.</li>
+                <li>Leave for 3–8 hours or overnight. Adjust position for comfort to avoid scalp pressure.</li>
+                <li>In the morning, unwind from bottom to top, separate curls with fingers, and lightly set if desired.
+                </li>
+            </ol>
+
+            <h4>Care & cleaning</h4>
+            <ul>
+                <li>Hand-wash the ribbon and scrunchie in lukewarm water with mild detergent; gently squeeze and air-dry
+                    flat.</li>
+                <li>Wipe the clip with a damp cloth; dry completely before storage.</li>
+            </ul>
+
+            <h4>Safety tips</h4>
+            <ul>
+                <li>Do not use on irritated or injured scalp. Discontinue if discomfort occurs.</li>
+                <li>Avoid sleeping with dripping-wet hair; it can cause breakage and discomfort.</li>
+                <li>Keep away from children. Keep away from open flames and high heat sources.</li>
+                <li>Check the ribbon and clip regularly; replace if cracked or deformed.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">8901647580967</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the
+                manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">Product Name: Hair tie</p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the
+                relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

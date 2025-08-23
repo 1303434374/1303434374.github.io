@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8901647581001</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding: 0 20px 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px);
+            /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <!-- Romanian -->
+            <h2>Ghid de Utilizare</h2>
+            <p><strong>Pentru a cumpăra acest produs, asigurați-vă că alegeți magazinul oficial Fengyun; alte magazine
+                    nu pot garanta autenticitatea și calitatea produsului!</strong></p>
+
+            <ul>
+                <li><strong>Despachetare:</strong> Îndepărtați folia de protecție și verificați integritatea suportului
+                    și a șnurului extensibil.</li>
+                <li><strong>Inserare carduri:</strong> Glisați până la două carduri prin deschiderea superioară;
+                    orientați cipul/contactless spre exterior pentru citire rapidă.</li>
+                <li><strong>Fixare șnur:</strong> Atașați clema metalică la inelul suportului; asigurați-vă că
+                    moschetarul este complet închis.</li>
+                <li><strong>Purtare:</strong> Așezați șnurul în jurul gâtului sau prindeți clipsul de buzunar/centură;
+                    evitați răsucirea cordonului.</li>
+                <li><strong>Extindere și retragere:</strong> Trageți ușor până la lungimea maximă (~60 cm) pentru
+                    validare; lăsați cordonul să se retragă lent – nu bruscați mecanismul.</li>
+                <li><strong>Curățare:</strong> Ștergeți carcasa transparentă cu o lavetă umedă; evitați solvenții și
+                    bureții abrazivi; lăsați să se usuce natural.</li>
+                <li><strong>Siguranță:</strong> Conține piese mici și cordon lung – pericol de strangulare/înghițire;
+                    nerecomandat copiilor &lt; 6 ani; nu trageți aproape de față.</li>
+                <li><strong>Depozitare:</strong> Retrageți complet șnurul și păstrați suportul într-un loc uscat, ferit
+                    de căldură (&lt; 40 °C) și lumină directă.</li>
+            </ul>
+
+            <hr>
+
+            <!-- Bulgarian -->
+            <h2>Ръководство за употреба</h2>
+            <p><strong>Купувайте този продукт само от официалния магазин на Fengyun; другите магазини не могат да
+                    гарантират автентичност и качество!</strong></p>
+
+            <ul>
+                <li><strong>Разопаковане:</strong> Свалете защитното фолио и проверете държача и удължаващото въже за
+                    повреди.</li>
+                <li><strong>Поставяне на карти:</strong> Плъзнете до две карти през горния отвор; насочете
+                    чипа/безконтактната зона навън за бързо сканиране.</li>
+                <li><strong>Закрепване на шнура:</strong> Закачете металната карабинка за халката на държача; уверете
+                    се, че е затворена.</li>
+                <li><strong>Носене:</strong> Поставете шнура около врата или фиксирайте клипа за джоб/колан; избягвайте
+                    усукване на въжето.</li>
+                <li><strong>Изтегляне и прибиране:</strong> Издърпайте плавно до макс. дължина (~60 cm) при проверка;
+                    оставете въжето да се прибере бавно – не дърпайте рязко.</li>
+                <li><strong>Почистване:</strong> Избършете прозрачния корпус с влажна кърпа; не използвайте разтворители
+                    или абразиви; оставете да изсъхне.</li>
+                <li><strong>Безопасност:</strong> Съдържа малки части и дълъг шнур – риск от задушаване/поглъщане;
+                    неподходящо за деца под 6 г.; не дърпайте близо до лице.</li>
+                <li><strong>Съхранение:</strong> Приберете въжето докрай и съхранявайте на сухо място, далеч от топлина
+                    (&lt; 40 °C) и слънце.</li>
+            </ul>
+
+            <hr>
+
+            <!-- Hungarian -->
+            <h2>Használati útmutató</h2>
+            <p><strong>A termék megvásárlásakor válassza a Fengyun hivatalos áruházát; más boltok nem garantálják a
+                    termék hitelességét és minőségét!</strong></p>
+
+            <ul>
+                <li><strong>Kicsomagolás:</strong> Távolítsa el a védőfóliát, ellenőrizze a tartókártya-tok és a
+                    kihúzható zsinór sértetlenségét.</li>
+                <li><strong>Kártyák behelyezése:</strong> Csúsztasson be legfeljebb két kártyát a felső nyíláson; a
+                    chip/érintésmentes oldal kifelé nézzen.</li>
+                <li><strong>Zsinór rögzítése:</strong> Akassza a fém karabinert a tok fülére; győződjön meg a
+                    záródásról.</li>
+                <li><strong>Viselés:</strong> Tegye a nyakba, vagy csíptesse övre/zsebre; kerülje a zsinór csavarodását.
+                </li>
+                <li><strong>Kihúzás és visszahúzás:</strong> Finoman húzza ki max. ~60 cm-re a beléptetéshez; engedje
+                    lassan vissza – ne rángassa.</li>
+                <li><strong>Tisztítás:</strong> Puha, nedves kendővel törölje le a tokot; oldószert, súrolót ne
+                    használjon; hagyja szabad levegőn száradni.</li>
+                <li><strong>Biztonság:</strong> Apró alkatrészeket és hosszú zsinórt tartalmaz – fulladás/lenyelés
+                    veszélye; 6 év alatt nem ajánlott; ne húzza archoz közel.</li>
+                <li><strong>Tárolás:</strong> Húzza vissza teljesen a zsinórt, száraz, &lt; 40 °C helyen tárolja,
+                    napfénytől védve.</li>
+            </ul>
+
+            <hr>
+
+            <!-- English -->
+            <h2>User Guide</h2>
+            <p><strong>When purchasing this product, make sure to choose the official Fengyun store; other stores cannot
+                    guarantee the product’s authenticity and quality!</strong></p>
+
+            <ul>
+                <li><strong>Unboxing:</strong> Remove the protective film and inspect the holder and retractable cord
+                    for damage.</li>
+                <li><strong>Card insertion:</strong> Slide up to two cards through the top slot; keep the
+                    chip/contactless side facing outward for quick scanning.</li>
+                <li><strong>Lanyard attachment:</strong> Clip the metal carabiner to the holder eyelet; ensure the gate
+                    is fully closed.</li>
+                <li><strong>Wearing:</strong> Place the lanyard around your neck or clip it to a pocket/belt; avoid
+                    twisting the cord.</li>
+                <li><strong>Extension & retraction:</strong> Gently pull up to ~60 cm for access checks; allow the cord
+                    to retract slowly—do not yank.</li>
+                <li><strong>Cleaning:</strong> Wipe the clear case with a damp cloth; avoid solvents and abrasive pads;
+                    air-dry naturally.</li>
+                <li><strong>Safety:</strong> Contains small parts and a long cord—choking/strangulation hazard; not for
+                    children under 6 years; keep away from face while pulling.</li>
+                <li><strong>Storage:</strong> Fully retract the cord and store in a dry place below 40 °C, away from
+                    direct heat or sunlight.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">8901647581001</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the
+                manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">Product Name: Card Holder</p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the
+                relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

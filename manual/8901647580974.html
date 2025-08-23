@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8901647580974</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .tab:hover {
+            background-color: #e9e9e9;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        /* Content container styling */
+        .content-container {
+            padding: 0 20px 20px;
+            background-color: #fff;
+            margin-top: 10px;
+            min-height: calc(100vh - 60px);
+            /* Adjusts based on tab height */
+            overflow-y: auto;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab active" id="tab1" onclick="switchTab(1)">User Instruction Manual</div>
+        <div class="tab" id="tab2" onclick="switchTab(2)">EU Declaration of Conformity</div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <div class="content" id="content1">
+            <!-- Romanian -->
+            <h3>Instrucțiuni de utilizare</h3>
+            <p><strong>Notă importantă:</strong> Vă rugăm să cumpărați acest produs din magazinul oficial Pengda; alte
+                magazine nu pot garanta autenticitatea și calitatea!</p>
+
+            <h4>Înainte de prima utilizare</h4>
+            <ul>
+                <li>Instalați/înlocuiți bateria conform polarității (+/−). Nu amestecați baterii vechi și noi.</li>
+                <li>Îndepărtați folia de protecție (dacă există). Spălați vârful sondei cu apă călduță și detergent
+                    blând, apoi uscați.</li>
+                <li>Apăsați butonul de pornire; selectați °C/°F dacă dispozitivul oferă opțiunea.</li>
+            </ul>
+
+            <h4>Măsurare</h4>
+            <ol>
+                <li>Introduceți vârful sondei în <strong>centrul celei mai groase părți</strong> a alimentului (evitați
+                    osul, grăsimea și vasele). Adâncime recomandată: ≥1,5–2 cm.</li>
+                <li>Pentru lichide: amestecați ușor, apoi măsurați; așteptați stabilizarea afișajului.</li>
+                <li>Dacă dispozitivul are presetări/temporizator, alegeți presetarea dorită sau setați ținta; porniți
+                    alarma.</li>
+                <li>Pentru citire rapidă, lăsați 3–10 s până la stabilizare. Pentru monitorizare continuă, lăsați doar
+                    <em>sonda</em> (și cablul rezistent la căldură, dacă există) în cuptor/grătar; unitatea principală
+                    rămâne în afara zonei de căldură.</li>
+            </ol>
+
+            <h4>Siguranță în utilizare</h4>
+            <ul>
+                <li>Numai sonda este rezistentă la temperatură; <strong>nu</strong> introduceți unitatea principală în
+                    cuptor, pe plită sau lângă flacără.</li>
+                <li>Nu depășiți domeniul indicat (de ex. 0–250°C). Nu utilizați în cuptor cu microunde.</li>
+                <li>Țineți cablul (dacă există) departe de rezistențe și flacără; nu prindeți cablul în ușile cuptorului
+                    fără protecție.</li>
+                <li>Produs pentru uz alimentar. Țineți departe de copii.</li>
+            </ul>
+
+            <h4>Curățare și întreținere</h4>
+            <ul>
+                <li>Curățați <em>numai sonda</em> cu apă călduță și detergent; dezinfectați cu șervețele sigure pentru
+                    contact alimentar. Uscați complet.</li>
+                <li>Carcasa: ștergere cu lavetă ușor umedă; <strong>nu</strong> scufundați în apă; evitați intrarea apei
+                    în compartimentul bateriei/porturi.</li>
+                <li>Nu spălați în mașina de spălat vase. Scoateți bateria pentru depozitare îndelungată; reciclați
+                    conform reglementărilor locale.</li>
+            </ul>
+
+            <hr />
+
+            <!-- Bulgarian -->
+            <h3>Инструкции за употреба</h3>
+            <p><strong>Важна бележка:</strong> Моля, купувайте този продукт от официалния магазин на Pengda; други
+                магазини не могат да гарантират автентичността и качеството!</p>
+
+            <h4>Преди първа употреба</h4>
+            <ul>
+                <li>Поставете/сменете батерията според поляритета (+/−). Не смесвайте нови и стари батерии.</li>
+                <li>Отстранете защитното фолио (ако има). Измийте върха на сондата с хладка вода и нежен препарат,
+                    подсушете.</li>
+                <li>Включете устройството; изберете °C/°F, ако е налично.</li>
+            </ul>
+
+            <h4>Измерване</h4>
+            <ol>
+                <li>Вкарайте върха на сондата в <strong>най-дебелата част</strong> на храната (избягвайте кост, мазнина
+                    и съдове). Препоръчителна дълбочина: ≥1,5–2 см.</li>
+                <li>За течности: разбъркайте леко и измерете; изчакайте стабилизиране на показанията.</li>
+                <li>Ако има пресети/таймер, изберете целевата стойност и стартирайте алармата.</li>
+                <li>За бързо отчитане изчакайте 3–10 s. За постоянно следене оставете <em>само сондата</em> (и
+                    термоустойчивия кабел, ако има) в фурната/скарата; основният модул остава извън зона на топлина.
+                </li>
+            </ol>
+
+            <h4>Безопасност при работа</h4>
+            <ul>
+                <li>Само сондата е топлоустойчива; <strong>не</strong> поставяйте основния модул във фурна, върху котлон
+                    или до открит пламък.</li>
+                <li>Не превишавайте указания диапазон (напр. 0–250°C). Не използвайте в микровълнова.</li>
+                <li>Дръжте кабела (ако има) далеч от нагреватели и пламък; не го защипвайте във вратата на фурната без
+                    защита.</li>
+                <li>Само за хранителна употреба. Пазете от деца.</li>
+            </ul>
+
+            <h4>Почистване и поддръжка</h4>
+            <ul>
+                <li>Почиствайте <em>само сондата</em> с хладка вода и мек препарат; дезинфекцирайте със средства,
+                    безопасни за контакт с храна. Подсушете добре.</li>
+                <li>Корпус: забърсване с леко влажна кърпа; <strong>не</strong> потапяйте; пазете отделението за
+                    батерия/портове от вода.</li>
+                <li>Не мийте в съдомиялна. При дълго съхранение извадете батерията; предавайте за рециклиране според
+                    местните правила.</li>
+            </ul>
+
+            <hr />
+
+            <!-- Hungarian -->
+            <h3>Használati útmutató</h3>
+            <p><strong>Fontos megjegyzés:</strong> Kérjük, ezt a terméket a Pengda hivatalos áruházából vásárolja; más
+                boltok nem garantálják a hitelességet és a minőséget!</p>
+
+            <h4>Első használat előtt</h4>
+            <ul>
+                <li>Helyezze be/cserélje az elemet a polaritás (+/−) szerint. Ne keverjen régi és új elemeket.</li>
+                <li>Távolítsa el a védőfóliát (ha van). Mossa meg a szonda hegyét langyos vízzel, enyhe szerrel, majd
+                    szárítsa meg.</li>
+                <li>Kapcsolja be a készüléket; válasszon °C/°F opciót, ha elérhető.</li>
+            </ul>
+
+            <h4>Mérés</h4>
+            <ol>
+                <li>Szúrja a szonda hegyét az étel <strong>legvastagabb részének közepébe</strong> (kerülje a csontot,
+                    zsírt, ereket). Ajánlott mélység: ≥1,5–2 cm.</li>
+                <li>Folyadékoknál: keverje meg, majd mérjen; várja meg a kijelzés stabilizálódását.</li>
+                <li>Ha van előbeállítás/időzítő, állítson be célértéket és indítsa az ébresztést.</li>
+                <li>Gyors leolvasáshoz várjon 3–10 mp-et. Folyamatos megfigyeléshez csak a <em>szondát</em> (és a hőálló
+                    kábelt, ha van) hagyja a sütőben/grillen; a főegység maradjon a hőforrástól távol.</li>
+            </ol>
+
+            <h4>Biztonságos használat</h4>
+            <ul>
+                <li>Csak a szonda hőálló; a főegységet <strong>ne</strong> tegye sütőbe, tűzhelyre vagy nyílt láng
+                    közelébe.</li>
+                <li>Ne lépje túl a megadott tartományt (pl. 0–250°C). Mikrohullámú sütőben ne használja.</li>
+                <li>A kábelt (ha van) tartsa távol a fűtőszálaktól és lángtól; ne csípje be a sütőajtóba védelem nélkül.
+                </li>
+                <li>Élelmiszeripari felhasználásra. Gyermekektől elzárva tartandó.</li>
+            </ul>
+
+            <h4>Tisztítás és karbantartás</h4>
+            <ul>
+                <li><em>Csak a szondát</em> tisztítsa langyos vízzel és enyhe szerrel; fertőtlenítéshez
+                    élelmiszer-biztonságos törlőkendő ajánlott. Szárítsa meg teljesen.</li>
+                <li>Ház: nedves ruhával törölje; <strong>ne</strong> merítse vízbe; ügyeljen, hogy az elemtartó/portok
+                    ne ázzanak be.</li>
+                <li>Ne mossa mosogatógépben. Hosszú tárolásnál az elemet vegye ki; használt elemeket a helyi előírások
+                    szerint adja le.</li>
+            </ul>
+
+            <hr />
+
+            <!-- English -->
+            <h3>User Manual</h3>
+            <p><strong>Important notice:</strong> Please purchase this product from the official Pengda store; other
+                stores cannot guarantee authenticity or quality!</p>
+
+            <h4>Before first use</h4>
+            <ul>
+                <li>Install/replace the battery observing polarity (+/−). Do not mix old and new batteries.</li>
+                <li>Remove any protective film. Wash the probe tip with warm water and mild detergent; dry thoroughly.
+                </li>
+                <li>Power on; select °C/°F if available.</li>
+            </ul>
+
+            <h4>Measuring</h4>
+            <ol>
+                <li>Insert the probe tip into the <strong>center of the thickest part</strong> of the food (avoid bone,
+                    fat, and vessels). Recommended depth: ≥1.5–2 cm.</li>
+                <li>For liquids, stir gently then measure; wait for the reading to stabilize.</li>
+                <li>If presets/timer are available, set the target and start the alarm.</li>
+                <li>For instant-read, wait 3–10 s. For continuous monitoring, leave <em>only the probe</em> (and
+                    heat-resistant cable, if present) in the oven/grill; keep the main unit away from heat.</li>
+            </ol>
+
+            <h4>Safety</h4>
+            <ul>
+                <li>Only the probe is heat-resistant; <strong>do not</strong> place the main unit in an oven, on a
+                    stovetop, or near open flame.</li>
+                <li>Do not exceed the indicated range (e.g., 0–250°C). Do not use in a microwave.</li>
+                <li>Keep any cable away from heating elements and flames; do not pinch it in oven doors without
+                    protection.</li>
+                <li>Food use only. Keep out of reach of children.</li>
+            </ul>
+
+            <h4>Cleaning & care</h4>
+            <ul>
+                <li>Clean <em>probe only</em> with warm water and mild detergent; sanitize with food-safe wipes. Dry
+                    completely.</li>
+                <li>Wipe the body with a slightly damp cloth; <strong>do not</strong> immerse; keep water out of the
+                    battery compartment/ports.</li>
+                <li>Not dishwasher-safe. Remove the battery for long-term storage; recycle according to local rules.
+                </li>
+            </ul>
+        </div>
+
+        <div class="content" id="content2" style="display: none;">
+            <h1 class="heading">EU DECLARATION OF CONFORMITY</h1>
+
+            <p class="section-title">1. No … (unique identification of the product)</p>
+            <p class="section-content">8901647580974</p>
+
+            <p class="section-title">2. Name and Address of the Manufacturer:</p>
+            <p class="section-content">
+                Guangzhou Pengda Business Technology Co., Ltd.<br>
+                250-28, A2, No.20, Sanlian Road, Huangcun, Tianhe District, Guangzhou, Guangdong, 510630
+            </p>
+
+            <p class="section-title">3. This declaration of conformity is issued under the sole responsibility of the
+                manufacturer:</p>
+            <p class="section-content">Guangzhou Pengda Business Technology Co., Ltd.</p>
+
+            <p class="section-title">4. Object of the Declaration:</p>
+            <p class="section-content">Product Name: Thermometer</p>
+
+            <p class="section-title">5. The object of the declaration described in point 4 is in conformity with the
+                relevant Union harmonisation legislation:</p>
+            <p class="section-content">• Directive 2001/95/EC (General Product Safety Directive - GPSD)</p>
+
+            <p class="section-title">6. References to Harmonised Standards:</p>
+            <p class="section-content">• ISO 9001:2015 (Quality Management System, optional for reference)</p>
+
+            <p class="section-title">7. Notified Body (if applicable):</p>
+            <p class="section-content">Not applicable</p>
+
+            <p class="section-title">8. Additional Information:</p>
+            <p class="section-content">
+                Place and Date of Issue: Germany, 01/01/2025<br>
+                Name: Peter<br>
+                Function: Compliance Officer<br>
+                Signature: ___Peter___
+            </p>
+
+            <p class="signature">Signed for and on behalf of: Peter</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabNumber) {
+            // Hide both content sections
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Remove active class from both tabs
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab2').classList.remove('active');
+
+            // Show the selected tab content
+            if (tabNumber === 1) {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('tab1').classList.add('active');
+            } else {
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('tab2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
