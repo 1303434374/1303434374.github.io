@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Generated inputs used by manual scripts (do not commit)
+manual/eans.txt
+manual/update.txt
+fengyun/eans.txt
+fengyun/update.txt
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
